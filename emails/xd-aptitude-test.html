@@ -14,8 +14,9 @@
 			
 			/* RESET STYLES */
 			img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
-			table { border-collapse: collapse !important; }
+			table { border-collapse: collapse !important; border-spacing: 0;}
 			body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+			/* td {line-height: 100%;} */
 			
 			/* iOS BLUE LINKS */
 			a[x-apple-data-detectors] {
@@ -48,12 +49,12 @@
 			}
 
 			/* Universal styles for links and stuff */
-			a { color: #229efd; font-weight: bold; }
+			a { color: #229efd; font-weight: normal; text-decoration: underline;}
 			a:hover { color: #fd6350; text-decoration: none; }
 			a.button:hover { background-color: #fd6350 !important; }
 
 			h1, h2, h3, h4, h5, h6 { font-weight: 800; font-family: 'Arial Black'; padding: 0; margin: 0; padding-left: 3%; padding-right: 3%; color: black}
-			td, div, span, p, li {font-family: 'Arial Black'; font-weight: 100; font-size: 24px; color: #514E4B; padding: 0; padding-left: 3%; padding-right: 3%;}
+			td, div, span, p, li {font-family: 'Arial'; font-weight: normal; font-size: 16px; color: #514E4B; padding: 0; padding-left: 3%; padding-right: 3%;}
 			td, div, span, li {margin: 0;}
 			li {font-weight: 800;}
 			ul {padding-left: 7%;}
@@ -89,6 +90,10 @@
 				user-select: none;
 			}
 
+			.intro-subhead{
+				font-size: 25px;
+			}
+
 		</style>
 	</head>
 	<body id="body" style="margin: 0 !important; padding: 0 !important;">
@@ -114,45 +119,7 @@
 										</td>
 										<td></td>
 										<td align="right" style="padding: 0;">
-											<table>
-												<!-- this table is a button with a shadow-->
-												<!-- top left: button  || top right: shadow -->
-												<!-- bot left: shadow  || bot right: shadow -->
-												<tr>
-													<td>
-														<!-- top left -->
-														<a href="http://"
-															style="
-															background-color:#504F4B;
-															border:3px solid #000000;
-															color:#ffffff;
-															display:inline-block;
-															font-family:'Arial', Helvetica, sans-serif;
-															font-size:21px;font-weight:500;
-															list-style: height 5px;
-															line-height: 55px;
-															text-align:center;
-															text-decoration:none;
-															width:104px;
-															-webkit-text-size-adjust:none;
-															mso-hide:all;">Apply</a>
-													</td>
-													<td style="padding: 0; padding-top: 4px; margin: 0;">
-														<!-- top right -->
-														<div style='background-color: rgb(132, 129, 127);width: 4px; height: 57px; padding: 0; margin: 0;'></div>
-													</td>
-												</tr>
-												<tr>
-													<td style="padding: 0; padding-left: 6px; margin: 0;">
-														<!-- bottom left -->
-														<div style='background-color: rgb(132, 129, 127);width: 106px; height: 4px; padding: 0; margin: 0;'></div>
-													</td>
-													<td style="padding: 0; margin: 0;">
-														<!-- bottom right -->
-														<div style='background-color: rgb(132, 129, 127);width: 4px; height: 4px; padding: 0; margin: 0;'></div>
-													</td>
-												</tr>
-											</table>
+											
 										</td>
 									</tr>
 								</table>
@@ -161,7 +128,7 @@
 
 						<!-- Hey [first name]! -->
 						<tr width="100%">
-							<td align="center" style="padding: 0; padding-top: 40px; padding-bottom: 40px; background-color: #E2E9F8;">
+							<td align="center" style="padding: 0; padding-top: 40px; padding-bottom: 0px; background-color: #E2E9F8;">
 									<table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
 										<tr>
 											<td align="left" style="padding: 0; margin: 1px; padding-left: 3%; padding-right: 3%;">
@@ -175,8 +142,8 @@
 										</tr>
 										<tr>
 											<td style="color:#514E4B; padding: 0; margin: 0; padding-left: 3%; padding-right: 3%;">
-												<p>It was great talking with you today! You’re going to fit right in. </p>
-												<p style="margin-bottom: 44px;">Let’s get started on the next steps you need to take to start the course.</p>
+												<p class="intro-subhead">It was great talking with you today! You’re going to fit right in. </p>
+												<p class="intro-subhead">Let’s get started on the next steps you need to take to start the course.</p>
 											</td>
 										</tr>
 									</table>
@@ -277,19 +244,19 @@
 													mso-hide:all;">Take The Aptitude Test</a>
 											
 												</td>
-												<!-- top left -->
-												<td style="padding: 0; padding-top: 4px; margin: 0;">
-													<div style='background-color: rgb(132, 129, 127);width: 4px; height: 57px; padding: 0; margin: 0;'></div>
+												<!-- top right -->
+												<td style="padding: 0; padding-top: 3px; margin: 0;">
+													<div style='background-color: #E2E1DD;width: 2px; height: 58px; padding: 0; margin: 0;'></div>
 												</td>
 											</tr>
 											<tr>
-												<!-- bottom right -->
+												<!-- bottom right D3D2CF-->
 												<td style="padding: 0; padding-left: 16px; margin: 0;">
-													<div style='background-color: rgb(132, 129, 127);width: 396px; height: 4px; padding: 0; margin: 0;'></div>
+													<div style='background-color: #E2E1DD;width: 396px; height: 3px; padding: 0; margin: 0;'></div>
 												</td>
 												<!-- bottom left -->
 												<td style="padding: 0; margin: 0;">
-													<div style='background-color: rgb(132, 129, 127);width: 4px; height: 4px; padding: 0; margin: 0;'></div>
+													<div style='background-color: #E2E1DD;width: 2px; height: 3px; padding: 0; margin: 0;'></div>
 												</td>
 											</tr>
 										</table>											
@@ -299,13 +266,13 @@
 									<p>Once you have passed the aptitude test, we will discuss what best funding option meets your needs during our next meeting.</p>
 									<div>							
 										<ol>
-											<li style="margin-bottom: 40px; margin-top: 45px;">LOAN OPTIONS</li>
+											<li style="margin-bottom: 20px; margin-top: 45px;">LOAN OPTIONS</li>
 												<div style="margin-bottom: 15px"><a>Skills Fund</a></div>
 												<div><a>Climb Credit</a></div>
-											<li style="margin-top: 40px; margin-bottom: 40px;">INCOME SHARE AGREEMENT</li>
+											<li style="margin-top: 20px; margin-bottom: 20px;">INCOME SHARE AGREEMENT</li>
 												<div style="margin-bottom: 15px"><a>What is an income share agreement?</a></div>
 												<div><a>Income share agreement application</a></div>
-											<li style="margin-top: 40px;">G.I. BILL</li>
+											<li style="margin-top: 20px;">G.I. BILL</li>
 												<p>Please contact us to discuss G.I. Bill eligibility.</p>
 												<p><strong>*International Students* please contact us to discuss funding options.</strong></p>
 										</ol>
@@ -353,19 +320,19 @@
 													</a>
 											
 												</td>
-												<!-- top left -->
-												<td style="padding: 0; padding-top: 4px; margin: 0;">
-													<div style='background-color: rgb(132, 129, 127);width: 4px; height: 57px; padding: 0; margin: 0;'></div>
+												<!-- top right -->
+												<td style="padding: 0; padding-top: 3px; margin: 0;">
+													<div style='background-color: #E2E1DD;width: 2px; height: 58px; padding: 0; margin: 0;'></div>
 												</td>
 											</tr>
 											<tr>
-												<!-- bottom right -->
+												<!-- bottom left E2E1DD -->
 												<td style="padding: 0; padding-left: 16px; margin: 0;">
-													<div style='background-color: rgb(132, 129, 127);width: 396px; height: 4px; padding: 0; margin: 0;'></div>
+													<div style='background-color: #E2E1DD;width: 396px; height: 3px; padding: 0; margin: 0;'></div>
 												</td>
-												<!-- bottom left -->
+												<!-- bottom right -->
 												<td style="padding: 0; margin: 0;">
-													<div style='background-color: rgb(132, 129, 127);width: 4px; height: 4px; padding: 0; margin: 0;'></div>
+													<div style='background-color: #E2E1DD;width: 2px; height: 3px; padding: 0; margin: 0;'></div>
 												</td>
 											</tr>
 										</table>
@@ -378,14 +345,6 @@
 									<h3>V School</h3>
 									<div style='margin: 0; padding: 0; width: 100%;'>
 										<table style='width: 100%'>
-											<tr>
-												<td>
-													<!-- put a green box behind the text, but SHORTER than the text; like a weird shadow -->
-													<div style="max-height: 0; padding: 0;">
-														<div style="display: inline-block; font-size: 22px; line-height: 6px; margin: 0; padding: 0; margin-left: 2px; margin-top: 1px; color: #D8EBE8; background-color: #D8EBE8;">Newschool Vocational Tech Training</div>
-													</div>
-												</td>
-											</tr>
 											<tr>
 												<td style="width: 800px;">
 													<div style="font-size: 22px; color: #2B624B; padding: 0; margin: 0;">Newschool Vocational Tech Training</div>
